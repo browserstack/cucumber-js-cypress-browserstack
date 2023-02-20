@@ -1,0 +1,27 @@
+{
+  "name": "cucumber-js-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions"
+  },
+  "scripts": {
+    "test": "npm run cypress:run",
+    "clean:reports": "rm -rf cypress/report/ && rm -rf cypress/videos/ && rm -rf cypress/screenshots/ && rm -rf cypress/cucumber-json/",
+    "cypress:run": "npm run clean:reports && npx cypress run",
+    "cypress:open": "cypress open",
+    "bstack": "browserstack-cypress --config-file run_conf/browserstack.json run --sync",
+    "bstack-local": "browserstack-cypress --config-file run_conf/browserstack_local.json run --sync"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserstack-cypress-cli": "^1.19.3",
+    "cypress": "^12.5.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.3"
+  }
+}

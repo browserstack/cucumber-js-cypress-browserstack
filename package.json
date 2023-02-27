@@ -7,12 +7,13 @@
     "stepDefinitions": "cypress/support/step_definitions"
   },
   "scripts": {
+    "start": "npx http-server -a localhost -p 8081 &",
     "test": "npm run cypress:run",
-    "clean:reports": "rm -rf cypress/report/ && rm -rf cypress/videos/ && rm -rf cypress/screenshots/ && rm -rf cypress/cucumber-json/",
+    "clean:reports": "rm -rf cypress/report/ && rm -rf cypress/videos/ && rm -rf cypress/screenshots/",
     "cypress:run": "npm run clean:reports && npx cypress run",
     "cypress:open": "cypress open",
-    "bstack": "browserstack-cypress --config-file run_conf/browserstack.json run --sync",
-    "bstack-local": "browserstack-cypress --config-file run_conf/browserstack_local.json run --sync"
+    "sample-test": "browserstack-cypress run --sync --ccf ./cypress.config.js",
+    "sample-local-test": "npm start && browserstack-cypress run --sync --ccf ./cypress_local.config.js"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,6 @@
     "browserstack-cypress-cli": "^1.19.3",
     "cypress": "^12.5.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-xpath": "^2.0.1",
-    "mochawesome": "^7.1.3"
+    "cypress-xpath": "^2.0.1"
   }
 }

@@ -11,7 +11,7 @@ const purchase = new Purchase();
 const orders = new Orders();
 
 Given("I navigate to website", () => {
-  cy.visit(Cypress.config().baseUrl + "signin");
+  cy.visit(Cypress.config().baseUrl);
 });
 
 And("I SignIn as {string} with {string} password", (username, password) => {

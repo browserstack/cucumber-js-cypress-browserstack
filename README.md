@@ -4,7 +4,7 @@
 
 Cypress is a next generation front end testing tool built for the modern web. Cucumber is a software tool that supports behavior-driven development (BDD).
 
-This BrowserStack Example repository demonstrates a Cypress framework with parallel testing capabilities. The Cypress test scripts are written for the open source [BrowserStack Demo web application](https://bstackdemo.com) ([Github](https://github.com/browserstack/browserstack-demo-app)). This BrowserStack Demo App is an e-commerce web application which showcases multiple real-world user scenarios. The app is bundled with offers data, orders data and products data that contains everything you need to start using the app and run tests out-of-the-box.
+This BrowserStack Example repository demonstrates a Cypress framework with parallel testing capabilities. The Cypress test scripts are written for the open source [BrowserStack Demo web application](https://bstackdemo.com) ([Github](https://github.com/browserstack/browserstack-demo-app)).
 
 The Cypress tests are run on different platforms like on-prem and BrowserStack using various run configurations and test capabilities.
 
@@ -18,18 +18,11 @@ You need BrowserStack credentials to be able to run Cypress tests. You have to r
 
 1. Clone this repository
 2. Install the dependencies using `npm install`
-3. Run the sample script using `npm run bstack`
+3. Run the sample script using `npm run sample-test`
 
 ## Run sample test on privately hosted websites
 
-1. Clone the [BrowserStack demo application](https://github.com/browserstack/browserstack-demo-app) repository.
-
-```sh
-git clone https://github.com/browserstack/browserstack-demo-app
-```
-
-2. Please follow the README.md on the BrowserStack demo application repository to install and start the dev server on localhost.
-3. You can then run the sample Local test using `npm run bstack-local`
+Run the sample Local test using `npm run sample-local-test`
 
 ## Additional Resources
 

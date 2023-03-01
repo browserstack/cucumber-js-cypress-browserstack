@@ -4,9 +4,9 @@ const cucumber = require("cypress-cucumber-preprocessor").default;
 module.exports = defineConfig({
   watchForFileChanges: true,
   experimentalWebKitSupport: true,
-  reporter: "junit",
+  reporter: "cypress-multi-reporters",
   reporterOptions: {
-    mochaFile: "results/test-results-[hash].xml",
+    configFile: "reporterConfig.json",
   },
 
   e2e: {

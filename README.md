@@ -14,6 +14,8 @@ You need BrowserStack credentials to be able to run Cypress tests. You have to r
 
 **Alternatively, you can set the environment variables `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY` with your credentials and all the scripts in this repository should work fine**
 
+NOTE: **Supported on Node v14+**
+
 ## Run Cypress test on BrowserStack
 
 1. Clone this repository

@@ -1,0 +1,9 @@
+node_modules
+screenshots
+videos
+downloads
+report
+log
+*.log
+results
+build_artifacts

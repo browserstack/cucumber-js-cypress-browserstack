@@ -1,0 +1,30 @@
+{
+  "name": "cucumber-js-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions"
+  },
+  "scripts": {
+    "start": "npx http-server -a localhost -p 8081 &",
+    "test": "npm run cypress:run",
+    "clean:reports": "rm -rf cypress/report/ && rm -rf cypress/videos/ && rm -rf cypress/screenshots/",
+    "cypress:run": "npm run clean:reports && npx cypress run",
+    "cypress:open": "cypress open",
+    "sample-test": "browserstack-cypress run --sync --ccf ./cypress.config.js",
+    "sample-local-test": "npm start && browserstack-cypress run --sync --ccf ./cypress_local.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserstack-cypress-cli": "^1.19.3",
+    "cypress": "^12.5.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-multi-reporters": "^1.6.2",
+    "cypress-xpath": "^2.0.1",
+    "mocha-junit-reporter": "^2.2.0",
+    "mochawesome": "^7.1.3"
+  }
+}

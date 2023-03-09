@@ -10,8 +10,8 @@
       "versions": ["latest"]
     },
     {
-      "browser": "webkit",
-      "os": "OS X Ventura",
+      "browser": "edge",
+      "os": "Windows 11",
       "versions": ["latest"]
     },
     {

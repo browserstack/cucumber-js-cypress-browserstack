@@ -16,7 +16,6 @@ You need BrowserStack credentials to be able to run Cypress tests. You have to r
 
 NOTE: **Supported on Node v14+**
 
-
 ## Run Cypress test on BrowserStack
 
 1. Clone this repository
